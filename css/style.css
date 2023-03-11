@@ -66,7 +66,6 @@ nav ul.side-nav-list {
   left: 0;
   width: 100%;
   max-width: 360px;
-
   min-height: 100vh;
   background-color: rgba(66, 65, 77, 0.99);
   border-top: 5px solid #675cb8;
@@ -78,20 +77,21 @@ nav ul.side-nav-list {
 nav ul.side-nav-list li {
   font-size: 1.2rem;
   font-weight: bold;
-
+  display: block;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 20px 40px;
+  padding: 20px 20px;
   text-align: center;
 }
 
 nav ul.side-nav-list li:hover {
   background-color: #675cb8;
-  cursor: pointer;
 }
 
 nav ul.side-nav-list li a {
+  padding: 8px 20px;
   text-decoration: none;
   color: #fbfbfe;
+  cursor: pointer;
 }
 
 /*Main sections*/
@@ -102,7 +102,7 @@ main {
 }
 
 .container {
-  padding: 2% 5%;
+  padding: 5% 5%;
   margin: 0;
   text-align: center;
 }
@@ -130,14 +130,14 @@ main section.hero img {
   max-width: 800px;
 }
 
-main section#update {
+/* main section#update {
 }
 
 main section#testimonials {
 }
 
 main section#gallery {
-}
+} */
 
 main section#contact {
   background-color: powderblue;
