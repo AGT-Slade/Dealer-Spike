@@ -259,4 +259,9 @@ footer ul.footer-list li div.info p span.day {
   main section#contact a div.background {
     height: 300px;
   }
+
+  main section#gallery ul.grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 5px;
+  }
 }
