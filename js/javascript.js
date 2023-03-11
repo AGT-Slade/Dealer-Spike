@@ -4,3 +4,15 @@ $(document).ready(function () {
     $(this).toggleClass("toggle-menu");
   });
 });
+
+const imgArray = document.querySelectorAll(
+  "section#gallery ul.grid-container li"
+);
+
+for (let i = 0; i < imgArray.length; i++) {
+  // imgArray[i].style.backgroundImage = `url("../images/gallery/img_${i}.jpg")`;
+  imgArray[
+    i
+  ].innerHTML = `<img class="gall" src="images/gallery/img_${i}.jpg" alt="img_${i}.jpg" />`;
+  console.log(imgArray[i]);
+}
