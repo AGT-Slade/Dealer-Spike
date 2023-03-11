@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -14,6 +15,10 @@ nav {
   box-shadow: 0 5px #675cb8;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
   z-index: 1;
 }
 
@@ -97,7 +102,7 @@ nav ul.side-nav-list li a {
 /*Main sections*/
 
 main {
-  padding-top: 67px;
+  /* padding-top: 67px; */
   background-color: antiquewhite;
 }
 
@@ -227,9 +232,6 @@ footer ul.footer-list li div.info p span.day {
     height: 0;
   }
 
-  main {
-    padding-top: 118px;
-  }
   main section#contact a div.background {
     height: 300px;
   }
