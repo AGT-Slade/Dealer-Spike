@@ -8,10 +8,6 @@ html {
   height: 100%;
 }
 
-body {
-  height: 100%;
-}
-
 nav {
   padding: 0 1%;
   background-color: #2b2a33;
@@ -115,6 +111,8 @@ main {
   margin: 0 0 10px 0;
 }
 
+/*Hero Section*/
+
 main section.hero {
   background-color: #f29332;
   min-height: 300px;
@@ -128,6 +126,8 @@ main section.hero img {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
+  width: 100%;
+  max-width: 800px;
 }
 
 main section#update {
