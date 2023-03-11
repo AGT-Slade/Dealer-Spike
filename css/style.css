@@ -37,6 +37,15 @@ nav ul.nav-list li {
   padding: 5px 10px;
 }
 
+nav ul.nav-list li h1 a {
+  text-decoration: none;
+  color: #fbfbfe;
+}
+
+nav ul.nav-list li h1 :hover {
+  cursor: pointer;
+}
+
 nav ul.nav-list li:nth-of-type(3) {
   flex-grow: 1;
   visibility: hidden;
@@ -112,8 +121,14 @@ main {
   text-align: center;
 }
 
-.container h2 {
-  margin: 0 0 10px 0;
+.container h2.section-heading {
+  margin: 10px auto;
+  color: #f29332;
+  text-decoration-line: underline;
+  background-color: #2b2a33;
+  padding: 15px 50px;
+  display: inline-block;
+  border-radius: 10px;
 }
 
 /*Hero Section*/
@@ -136,15 +151,50 @@ main section.hero img {
 }
 
 /* main section#update {
-}
+} */
 
 main section#testimonials {
-}*/
+  background-image: url("../images/testimonials/Testimonials-Background.jpeg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-/*Gallerysection */
+main section#testimonials ul.test-grid-container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+main section#testimonials ul.test-grid-container li {
+  border: 2px solid #675cb8;
+  box-shadow: 5px 5px 5px whitesmoke;
+  background-color: rgba(66, 65, 77, 0.9);
+  padding: 20px;
+  position: relative;
+  color: #fbfbfe;
+}
+
+main section#testimonials ul.test-grid-container li .rating {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: -9px;
+  color: #f29332;
+}
+
+main section#testimonials ul.test-grid-container li .comment {
+  margin: 20px;
+}
+
+/* Gallery Section  */
 
 main section#gallery {
-  background-color: #675cb8;
+  background-color: #665866;
 }
 
 main section#gallery ul.grid-container {
@@ -167,13 +217,14 @@ main section#gallery ul.grid-container li {
 /*Contact Section*/
 
 main section#contact {
-  background-color: powderblue;
+  background-color: #443d45;
 }
 
 .wrapper {
   margin: 0 auto;
   width: 100%;
   max-width: 1084px;
+  padding: 20px;
 }
 
 main section#contact a {
@@ -260,7 +311,8 @@ footer ul.footer-list li div.info p span.day {
     height: 300px;
   }
 
-  main section#gallery ul.grid-container {
+  main section#gallery ul.grid-container,
+  main section#testimonials ul.test-grid-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 5px;
   }

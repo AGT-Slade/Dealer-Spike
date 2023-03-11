@@ -14,5 +14,7 @@ for (let i = 0; i < imgArray.length; i++) {
   imgArray[
     i
   ].innerHTML = `<img class="gall" src="images/gallery/img_${i}.jpg" alt="img_${i}.jpg" />`;
-  console.log(imgArray[i]);
 }
+
+const heading = document.querySelectorAll(".container h2.section-heading");
+console.log("AGT", heading);
